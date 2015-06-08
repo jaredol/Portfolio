@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
+	
+	<title>Jared O'Loughlin - Portfoio</title>
+
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="main.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', 'thirdPage'],
+				sectionsColor: ['#555', '#7E8F7C', '#7E8F7C'],
+				css3: true,
+				menu: '#myMenu',
+				controlArrows:false
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+
+<div id="header">
+	<ul id="myMenu">
+	    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Work</a></li>
+	    <li data-menuanchor="secondPage"><a href="#secondPage">About</a></li>
+	    <li data-menuanchor="thirdPage"><a href="#thirdPage">Contact</a></li>
+	</ul>
+</div>
+<div id="footer"> Jared O'Loughlin 2015</div>
+
+<div id="fullpage">
+
+	<div class="section" id="section0">
+	    <div class="slide" id="slide1">
+	    	<div class="full_size_bg">&nbsp;</div>
+				
+			<div class="intro">
+				<h1>WORK</h1>
+				<ul class="thumbs">
+					<li class="portfolio_image"><a href="#firstPage/1"><div class="overlay">&nbsp;</div><img src="images/rock.png" alt="Rockcentration"></a></li>
+					<li class="portfolio_image"><a href="#firstPage/2"><div class="overlay">&nbsp;</div><img src="images/geek.png"></a></li>
+					<li class="portfolio_image"><a href=""><img src="images/wdi.jpg"></a><div class="overlay">&nbsp;</div></li>
+					<li class="portfolio_image"><a href=""><img src="images/myob.jpg"></a><div class="overlay">&nbsp;</div></li>
+					<li class="portfolio_image"><a href=""><img src="images/anne.jpg"></a><div class="overlay">&nbsp;</div></li>
+					<li class="portfolio_image"><a href=""><img src="images/goodfood.jpg"></a><div class="overlay">&nbsp;</div></li>
+				</ul>
+				<!-- <video id="v1" autoplay loop controls type="video/mp4" src="vid.mp4"></video> -->
+
+				<!-- <p>A rock twist on the classic memory game 'Concentration'</p> -->
+			</div>
+		</div>
+		<div class="slide" id="slide2">
+    		<div class="full_size_bg">&nbsp;</div>
+    		<div class="roj_profile">
+        		<div class="feature_image">
+            		<img src="images/rock.png" alt="Rockcentration">
+            
+            		<div class="proj_profile_content">
+                		<p class="GA"><img src="images/GA.png" />Project</p>
+                		<p>A Rock-themed take on the classic memory game, Concentration.</p>
+		                <ul>
+		                    <li>Single-page app</li>
+		                    <li>HTML + CSS + JS</li>
+		                </ul>
+                		<p><a class="btn" href="http://jaredol.github.io/memRock/">View</a></p>
+            		</div>
+        		</div>
+    		</div>
+		</div>
+		<div class="slide" id="slide3">
+		    <div class="full_size_bg">&nbsp;</div>
+		    <div class="roj_profile">
+		        <div class="feature_image">
+		            <img src="images/geek.png" alt="geekMatch">
+		            
+		            <div class="proj_profile_content">
+		                <p class="GA"><img src="images/GA.png" />Project</p>
+		                <p>A Geek-themed dating site</p>
+		                <ul>
+		                    <li>HTML + CSS + JS</li>
+		                    <li>Backend: Sinatra + Postgres</li>
+		                </ul>
+		                <p><a class="btn" href="http://jaredol.github.io/memRock/">View</a></p>
+		            </div>
+		        </div>
+		    </div>
+		</div> 
+
+		
+	</div>
+	<div class="section" id="section1">
+		<div class="full_size_bg">&nbsp;</div>
+		<div class="intro">
+		<h1>ABOUT</h1>
+
+
+		<p>I'm a front-end web developer - originally from New Zealand and currently living in Melbourne, Australia. I've been working on the web for more than 10 years in one shape or another. My passion has always been in the front-end, but recently I've been learning skills accrosss the full stack the at General Assembly.</p>
+	
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>CONTACT ME</h1>
+			<p>jared.oloughlin@gmail.com</p>
+			<p>mobile: (+61) 040 292 8814</p>
+			<a class="github inline-block" href="https://github.com/jaredol"><img src="images/github.png"></a>
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>

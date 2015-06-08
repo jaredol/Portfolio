@@ -1,0 +1,303 @@
+body {
+  font-family: Ubuntu, serif;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+
+/* Style for our header texts
+  * --------------------------------------- */
+  h1 {
+    font-size: 1.2em;
+    font-family: Georgia, serif;
+    margin: -4em 0 2em 0;
+    padding:0;
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff;
+    padding:.3em .3em;
+    color:#fff;
+    display: inline-block;
+  }
+
+  .intro p {
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+
+  /* Centered texts in each section
+  * --------------------------------------- */
+  .section {
+    text-align: center;
+  }
+
+
+
+
+  /* Bottom menu
+  * --------------------------------------- */
+  #infoMenu {
+    bottom: 80px;
+  }
+
+  #infoMenu li a {
+    color: #fff;
+    z-index: 999;
+  }
+
+
+/* Nav
+* --------------------------------------- */
+
+#myMenu {
+  margin-left:2em;
+  margin-top: -6px;
+}
+
+#myMenu li {
+  display:inline-block;
+  margin-right: 1.5em;
+  margin-top: .3em;
+  margin-top: -20px;
+  font-family: Georgia;
+}
+
+#myMenu li.active a {
+  background: red;
+}
+
+#myMenu li a:hover {
+  background: #666;
+}
+
+  #myMenu a {
+    color:#fff;
+    font-family: 'Chivo', sans-serif;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+
+
+
+
+/* Portfolio
+* --------------------------------------- */
+
+#section0 {
+  background: red;
+
+}
+
+
+.full_size_bg {
+  position: absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  opacity: 0.2;
+  background: url('http://junkpit.net/wp-content/uploads/2011/08/Melbourne-Degraves-Street-1.jpg') no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+/*video { display: none; }*/
+
+.thumbs {
+  /*margin-left:21%;*/
+  max-width: 1000px;
+  /*background: red;*/
+
+  margin:0 auto;
+  padding: 0 80px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.portfolio_image {
+  max-width: 300px;
+  display: inline-block;
+  margin: 1.3em 1em .2em 0;
+  width:30%;
+  position: relative;
+  border:1px solid #999;
+  background: #fff;
+}
+
+.overlay {
+  background:rgba(0,0,0,.35);
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  opacity:1;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+}
+
+.portfolio_image:hover .overlay {
+  opacity:0;
+}
+
+
+.portfolio_image:nth-child(3n) {  /* no right margin for every 3rd item in Desktop view */
+  margin-right: 0;
+}
+
+.portfolio_image img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+/* Portfolio > Feature  */
+
+/*.fp-table.active .fp-tableCell {
+  vertical-align: top;
+}*/
+
+.proj_profile {
+  margin:10em 0 0 3em;
+}
+
+.proj_profile_content {
+  margin-top: .8em;
+}
+
+.proj_profile_content a {
+  /*color: red;*/
+}
+
+.feature_image {
+  display: inline-block;
+  color:#e7e7e7;
+  /*width:500px;*/
+  /*float: left;*/
+}
+
+.feature_image h3,
+.feature_image p,
+.feature_image ul {
+  color:#e7e7e7;
+  text-align: left;
+}
+
+.feature_image ul {
+  padding-left: 1em;
+  padding-bottom: .5em;
+  list-style-type:disc;
+}
+
+.feature_image li {
+  list-style-type: bullet;
+  font-family: verdana!important;
+
+}
+
+.feature_image img {
+  max-width:100%;
+}
+
+
+.GA {
+  float: right;
+  font-size:.9em;
+}
+
+.GA img {
+  width:30px;
+  vertical-align: middle;
+  margin-right: .3em;
+}
+
+.btn {
+  padding: .2em 1.2em;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  background: #222;
+  text-transform: uppercase;
+  font-size: .75em;
+}
+
+
+/* About
+* --------------------------------------- */
+
+#section1 {
+/*  background: url('http://junkpit.net/wp-content/uploads/2011/08/Melbourne-Degraves-Street-1.jpg') no-repeat;
+  background-size: cover;*/
+}
+
+#section1 .intro {
+  /*background:green;*/
+}
+
+.slide { 
+  position: relative;
+}
+
+.content {
+  margin:auto;
+  width:61.8%;
+  background: #e7e7e7;
+  height:100vh;
+}
+
+
+video {
+  min-height: 100%;
+  min-width: 100%;
+  height:100%;
+  width:100%;
+  opacity:0.3;
+  position: absolute;
+  left:0;
+  top:0;
+  z-index: -1;
+}
+
+
+
+  /* Contact
+  * --------------------------------------- */
+
+  .github {
+    margin-top:1em;
+  }
+
+
+
+
+
+  /* Fixed header and footer.
+  * --------------------------------------- */
+  #header, #footer{
+    position:fixed;
+    height: 29px;
+    display:block;
+    width: 100%;
+    background: #111;
+    z-index:9;
+    text-align:center;
+    color: #f2f2f2;
+    padding: 20px 0 0 0;
+  }
+
+  #header{
+    top:0px;
+
+  }
+  #footer{
+    bottom:0px;
+    font-size: .8em;
+    color:#555;
+  }
+
+
