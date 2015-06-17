@@ -6,21 +6,16 @@
 	<meta name="robots" content="noindex">
 
 	<!-- Google Font -->
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
 	
-	<title>Jared O'Loughlin - Portfoio</title>
+	<title>Jared O'Loughlin - Portfolio</title>
 
 	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="stylesheet" type="text/css" href="main.css" />
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-	<script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
-
-	<script type="text/javascript" src="jquery.fullPage.js"></script>
 
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -28,7 +23,7 @@
 				anchors: ['firstPage', 'secondPage', 'thirdPage'],
 				sectionsColor: ['#555', '#7E8F7C', '#7E8F7C'],
 				css3: true,
-				menu: '#myMenu',
+				menu: '#nav',
 				controlArrows:false
 			});
 		});
@@ -37,15 +32,14 @@
 </head>
 <body>
 
-
 <div id="header">
-	<ul id="myMenu">
+	<ul id="nav">
 	    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Work</a></li>
 	    <li data-menuanchor="secondPage"><a href="#secondPage">About</a></li>
 	    <li data-menuanchor="thirdPage"><a href="#thirdPage">Contact</a></li>
 	</ul>
 </div>
-<div id="footer"> Jared O'Loughlin 2015</div>
+
 
 <div id="fullpage">
 
@@ -63,9 +57,7 @@
 					<li class="portfolio_image"><a href=""><img src="images/anne.jpg"></a><div class="overlay">&nbsp;</div></li>
 					<li class="portfolio_image"><a href=""><img src="images/goodfood.jpg"></a><div class="overlay">&nbsp;</div></li>
 				</ul>
-				<!-- <video id="v1" autoplay loop controls type="video/mp4" src="vid.mp4"></video> -->
 
-				<!-- <p>A rock twist on the classic memory game 'Concentration'</p> -->
 			</div>
 		</div>
 		<div class="slide" id="slide2">
@@ -103,30 +95,31 @@
 		            </div>
 		        </div>
 		    </div>
-		</div> 
-
-		
+		</div> 	
 	</div>
 	<div class="section" id="section1">
 		<div class="full_size_bg">&nbsp;</div>
 		<div class="intro">
-		<h1>ABOUT</h1>
-
-
-		<p>I'm a front-end web developer - originally from New Zealand and currently living in Melbourne, Australia. I've been working on the web for more than 10 years in one form or another. My passion has always been in the front-end, but recently I've been learning skills accrosss the full stack the at General Assembly.</p>
-	
+			<h1>ABOUT</h1>
+			<p>I'm a front-end web developer - originally from New Zealand and currently living in Melbourne, Australia. I've been working on the web for more than 10 years in one form or another. My passion has always been in the front-end, but recently I've been learning skills across the full stack at <a href="http://generalassemb.ly">General Assembly</a>.</p>
 		</div>
 	</div>
 	<div class="section" id="section2">
 		<div class="intro">
 			<h1>CONTACT ME</h1>
-			<p>jared.oloughlin@gmail.com</p>
-			<p>mobile: (+61) 040 292 8814</p>
+			<p><a href="mailto:jared.oloughlin@gmail.com">jared.oloughlin@gmail.com</a></p>
+			<p>mobile: <a href="tel:+61402928814">(+61) 040 292 8814</a></p>
+			<a class="linkedin inline-block" href="https://au.linkedin.com/in/jaredol"><img src="images/Linkedin.png"/></a>
 			<a class="github inline-block" href="https://github.com/jaredol"><img src="images/github.png"></a>
 		</div>
 	</div>
 
 </div>
+
+<footer id="footer"> Jared O'Loughlin 2015</footer>
+
+<script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="jquery.fullPage.js"></script>
 
 </body>
 </html>

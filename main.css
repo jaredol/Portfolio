@@ -7,7 +7,7 @@ body {
 }
 
 
-/* Style for our header texts
+/* Style for header texts
   * --------------------------------------- */
   h1 {
     font-size: 1.2em;
@@ -21,42 +21,17 @@ body {
     display: inline-block;
   }
 
-  .intro p {
-    color: #fff;
-    font-size: 1.2em;
-    line-height: 1.5em;
-  }
-
-  /* Centered texts in each section
-  * --------------------------------------- */
-  .section {
-    text-align: center;
-  }
-
-
-
-
-  /* Bottom menu
-  * --------------------------------------- */
-  #infoMenu {
-    bottom: 80px;
-  }
-
-  #infoMenu li a {
-    color: #fff;
-    z-index: 999;
-  }
 
 
 /* Nav
 * --------------------------------------- */
 
-#myMenu {
+#nav {
   margin-left:2em;
   margin-top: -6px;
 }
 
-#myMenu li {
+#nav li {
   display:inline-block;
   margin-right: 1.5em;
   margin-top: .3em;
@@ -64,15 +39,15 @@ body {
   font-family: Georgia;
 }
 
-#myMenu li.active a {
+#nav li.active a {
   background: red;
 }
 
-#myMenu li a:hover {
+#nav li a:hover {
   background: #666;
 }
 
-  #myMenu a {
+  #nav a {
     color:#fff;
     font-family: 'Chivo', sans-serif;
     display: block;
@@ -84,16 +59,8 @@ body {
 
 
 
-
-
 /* Portfolio
 * --------------------------------------- */
-
-#section0 {
-  background: red;
-
-}
-
 
 .full_size_bg {
   position: absolute;
@@ -107,13 +74,8 @@ body {
   z-index: -1;
 }
 
-/*video { display: none; }*/
-
 .thumbs {
-  /*margin-left:21%;*/
   max-width: 1000px;
-  /*background: red;*/
-
   margin:0 auto;
   padding: 0 80px;
   overflow: hidden;
@@ -158,10 +120,6 @@ body {
 
 /* Portfolio > Feature  */
 
-/*.fp-table.active .fp-tableCell {
-  vertical-align: top;
-}*/
-
 .proj_profile {
   margin:10em 0 0 3em;
 }
@@ -170,15 +128,9 @@ body {
   margin-top: .8em;
 }
 
-.proj_profile_content a {
-  /*color: red;*/
-}
-
 .feature_image {
   display: inline-block;
   color:#e7e7e7;
-  /*width:500px;*/
-  /*float: left;*/
 }
 
 .feature_image h3,
@@ -203,7 +155,6 @@ body {
 .feature_image img {
   max-width:100%;
 }
-
 
 .GA {
   float: right;
@@ -230,15 +181,6 @@ body {
 /* About
 * --------------------------------------- */
 
-#section1 {
-/*  background: url('http://junkpit.net/wp-content/uploads/2011/08/Melbourne-Degraves-Street-1.jpg') no-repeat;
-  background-size: cover;*/
-}
-
-#section1 .intro {
-  /*background:green;*/
-}
-
 .slide { 
   position: relative;
 }
@@ -251,34 +193,43 @@ body {
 }
 
 
-video {
-  min-height: 100%;
-  min-width: 100%;
-  height:100%;
-  width:100%;
-  opacity:0.3;
-  position: absolute;
-  left:0;
-  top:0;
-  z-index: -1;
-}
-
-
 
   /* Contact
   * --------------------------------------- */
 
-  .github {
-    margin-top:1em;
+  .intro p {
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-top: .2em;
   }
 
+  .github {
+    margin:1em 0 0 2em;
+  }
 
+  .github img { width: 80px; }
+
+  a.github,
+  a.linkedin {
+    text-decoration: none;
+    border: none;
+  }
+
+  #section2 a.github,
+  #section2 a.linkedin { border: none; }
+
+
+  a.linkedin {
+    width:40px;
+    margin-top: 2em;
+    } 
 
 
 
   /* Fixed header and footer.
   * --------------------------------------- */
-  #header, #footer{
+  #header, #footer {
     position:fixed;
     height: 29px;
     display:block;
@@ -290,11 +241,11 @@ video {
     padding: 20px 0 0 0;
   }
 
-  #header{
+  #header {
     top:0px;
 
   }
-  #footer{
+  #footer {
     bottom:0px;
     font-size: .8em;
     color:#555;
